@@ -24,7 +24,7 @@ jobs:
       
       - name: Detectar similaridade entre códigos
         id: plagiarism-check
-        run: |
+        run: |\r\n      python3 << 'PYTHON_SCRIPT'
           python3 << 'PYTHON_SCRIPT'
           import os
           import difflib
